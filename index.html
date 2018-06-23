@@ -1,0 +1,25 @@
+<html>
+</body>
+	<script>
+		var arrayImg = new Array();
+		arrayImg[0] = "k1.jpg";
+		arrayImg[1] = "k2.jpg";
+		arrayImg[2] = "k3.jpg";
+		arrayImg[3] = "k4.jpg";
+		//arrayImg[4] = "5.jpg";
+		//arrayImg[5] = "6.jpg";
+		//arrayImg[6] = "7.jpg";
+
+
+getRandomImage(arrayImg, "");
+
+function getRandomImage(imgAr, path) {
+    path = path || 'images/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+resize();
+	</script>
+</html>
