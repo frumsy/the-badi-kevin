@@ -1,5 +1,6 @@
 <html>
 </body>
+<div align="center"><img src="images/BG.jpg" id="bg"></div>
 	<script>
 		var arrayImg = new Array();
 		arrayImg[0] = "k1.jpg";
@@ -18,7 +19,8 @@ function getRandomImage(imgAr, path) {
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
     var imgStr = '<img src="' + path + img + '" alt = "">';
-    document.write(imgStr); document.close();
+	document.getElementById('bg').src = img;
+    //document.write(imgStr); document.close();
 }
 resize();
 	</script>
